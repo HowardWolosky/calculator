@@ -17,21 +17,49 @@ all community interactions must abide by the [Code of Conduct](CODE_OF_CONDUCT.m
 
 ## Finding issues you can help with
 Looking for something to work on?
-[Issues marked *good first issue*](https://github.com/Microsoft/calculator/labels/good%20first%20issue)
+Issues marked [*good first issue*](https://github.com/Microsoft/calculator/labels/good%20first%20issue)
 are a good place to start.
 
-You can also check [the *help wanted* tag](https://github.com/Microsoft/calculator/labels/help%20wanted)
-to find other issues to help with.
+You can also check the [*help wanted*](https://github.com/Microsoft/calculator/labels/help%20wanted)
+tag to find other issues to help with.  If you're interested in working on a fix, leave a comment and
+let us know -- we'll get the Issue assigned to you to help avoid duplicated effort from others.
 
 ## Contributions we accept
 We welcome your contributions to the Calculator project, especially to fix bugs and to make
 improvements which address the top issues reported by Calculator users.
 
-We have a high bar for new features and changes to the user experience. We prefer to evaluate
-*prototypes* to ensure that the design meets users' needs before we start discussing implementation
-details and reviewing code. We follow a [user-centered process for developing features](docs/NewFeatureProcess.md).
-New features need sponsorship from the Calculator team, but we welcome community contributions at
-many stages of the process.
+Some general rules:
+
+  * **DO** create one pull request per Issue, and ensure that the Issue is linked in the pull request.
+  * **DO** follow our [Coding and Style](#style-guidelines) guidelines, and keep code changes as small as possible.
+  * **DO** include corresponding tests whenever possible.
+  * **DO** check for additional occurrences of the same problem in other parts of the codebase
+    before submitting your PR.
+  * **DO** [link the issue you're addressing](https://github.com/blog/957-introducing-issue-mentions) in the pull request.
+  * **DO** write a good description for your pull request.  More detail is better.
+    Describe *why* the change is being made and *why* you've chosen a particular solution.
+    Describe any manual testing you performed to validate your change.
+
+  * **DON'T** submit submit a PR unless it is linked to an Issue marked
+   [`Triage: Approved``](https://github.com/Microsoft/calculator/issues?q=is%3Aissue+is%3Aopen+label%3A%22Triage%3A+Approved%22).
+    This enables us to have a discussion on the idea before anyone invests time in an implementation.
+    _(Changes that do not impact the behavior of the app are generally exempt from this requirement.)_
+  * **DON'T** merge multiple requests in one unless they have the same root cause.
+  * **DON'T** commit code that you didn't write.  If you find code that you think is a good fit,
+    file an Issue and start a discussion before proceeding.
+  * **DON'T** submit PR's that alter licensing related files or headers.  If you believe there's a
+    problem with them, file an Issue and we'll be happy to discuss it.
+  * **DON'T** submit pure formatting/typo changes to code that has not been modified otherwise.
+  * **DON'T** submit a PR for an Issue that is currently assigned to someone else.
+
+> Submitting a pull request for an approved Issue is not a guarantee it will be approved.
+> The change must meet our bar for code quality, architecture, and performance, as well as
+> [other requirements](#docs/NewFeatureProcess.md#technical-review).
+
+We have a high bar for new features and changes to the user experience.  We follow a
+[user-centered process for developing features](docs/NewFeatureProcess.md).  New features need
+sponsorship from the Calculator team, but we welcome community contributions at many stages of
+the process.
 
 ## Making changes to the code
 
@@ -61,16 +89,7 @@ to group your changes into a small number of commits which we can review one at 
 When completing a pull request, we will generally squash your changes into a single commit. Please
 let us know if your pull request needs to be merged as separate commits.
 
-## Submitting a pull request and participating in code review
-Writing a good description for your pull request is crucial to help reviewers and future
-maintainers understand your change. More detail is better.
-- [Link the issue you're addressing in the pull request](https://github.com/blog/957-introducing-issue-mentions).
-- Describe *why* the change is being made and *why* you've chosen a particular solution.
-- Describe any manual testing you performed to validate your change.
-
-Please submit one pull request per issue. Large pull requests which have unrelated changes can be
-difficult to review.
-
+## Review Process
 After submitting a pull request, members of the calculator team will review your code. We will
 assign the request to an appropriate reviewer within two days. Any member of the community may
 participate in the review, but at least one member of the Calculator team will ultimately approve
