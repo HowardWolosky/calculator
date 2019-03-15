@@ -1,26 +1,29 @@
 ---
-name: Bug report
-about: Report a problem with Calculator
+name: Localization Suggestion
+about: Report a problem or suggested change to Calculator's localized content.
 title: ''
-labels: ''
+labels: 'Localization'
 assignees: ''
 
 ---
 <!--
-Before filing a bug
+Please note:  We cannot _accept_ any change to our localized resources files.
+These files are automatically generated from an internal localization process.
+
+
+When
 - Ensure the bug reproduces on the latest version of the app.
-- Search existing issues and make sure this issue is not already filed.
--->
+- Search existing issues and make sure this issue is not already filed. -->
 
 **Describe the bug**
 <!-- A clear and concise description of what the bug is. -->
 
 **Steps To Reproduce**
-<!-- Steps to reproduce the behavior:
+<!--Steps to reproduce the behavior:
 1. Go to '...'
 2. Click on '....'
 3. Scroll down to '....'
-4. See error -->
+4. See error-->
 
 **Expected behavior**
 <!-- A clear and concise description of what you expected to happen. -->
@@ -35,6 +38,7 @@ Before filing a bug
 
 <!--
 Run the following commands in Powershell and copy/paste the output.
+
 " - OS Build: $([Environment]::OSVersion.Version)"
 " - Architecture: $((Get-AppxPackage -Name Microsoft.WindowsCalculator).Architecture)"
 " - Application Version: $((Get-AppxPackage -Name Microsoft.WindowsCalculator).Version)"
